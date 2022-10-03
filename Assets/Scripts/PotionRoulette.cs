@@ -41,7 +41,9 @@ public class PotionRoulette : MonoBehaviour
         {
             currentTime -= 1 * Time.deltaTime;
 
-            countDownBar.fillAmount = Mathf.Lerp(countDownBar.fillAmount, currentTime / 10, Time.deltaTime);
+            float amount = (currentTime / 10);
+
+            countDownBar.fillAmount = amount;
 
             if (currentTime <= 0)
             {
