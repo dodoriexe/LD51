@@ -1,1 +1,6 @@
 Library/
+Temp/
+Logs/
+build/
+Assembly-CSharp-Editor.csproj
+Assembly-CSharp.csproj
