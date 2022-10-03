@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PotionRoulette : MonoBehaviour
 {
@@ -18,7 +19,7 @@ public class PotionRoulette : MonoBehaviour
     public TMPro.TextMeshProUGUI potionName;
     public TMPro.TextMeshProUGUI potionDesc;
 
-    public TMPro.TextMeshProUGUI countdownText;
+    public Image countDownBar;
 
     bool shopOpen = false;
     float currentTime = 0f;
@@ -39,7 +40,8 @@ public class PotionRoulette : MonoBehaviour
         if(!shopOpen)
         {
             currentTime -= 1 * Time.deltaTime;
-            countdownText.text = currentTime.ToString("0.0");
+
+            countDownBar.fillAmount = Mathf.Lerp(countDownBar.fillAmount, currentTime / 10, Time.deltaTime);
 
             if (currentTime <= 0)
             {
