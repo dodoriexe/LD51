@@ -896,7 +896,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   knockbackFeedback: {fileID: 0}
   flashMaterial: {fileID: 2100000, guid: 9bea4fa00bd6c164bb9cac3eb390faa6, type: 2}
-  originalMaterial: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  originalMaterial: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 3}
   originalColor: {r: 1, g: 1, b: 1, a: 1}
   maxHP: 100
   currentHP: 76
@@ -1389,7 +1389,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: dfcfb5b94305f924980be1ad79b98c6a, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1980,6 +1980,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1131804787}
   - component: {fileID: 1131804788}
+  - component: {fileID: 1131804789}
   m_Layer: 3
   m_Name: AttackPoint
   m_TagString: Untagged
@@ -2054,6 +2055,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1131804789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1131804786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89b19da60636ed44b9ebe4e19ead27cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1192139979
 GameObject:
   m_ObjectHideFlags: 0

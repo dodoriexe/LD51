@@ -43,7 +43,7 @@ public class GiantBatShot : MonoBehaviour
         {
             Quaternion rotation = Quaternion.AngleAxis(i, transform.forward);
             Transform spawnerTransform = Instantiate(projectileSpawnerPrefab, transform.position, rotation);
-            spawnerTransform.GetComponent<ProjectileSpawner>().Initialize(entity, member);
+            spawnerTransform.GetComponent<ProjectileSpawner>().InitializeForward(entity, member);
         }
         StartCoroutine(BatShotMovementRecovery());
         StartCoroutine(BatShotCooldown());

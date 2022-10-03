@@ -136,3 +136,5 @@ MonoBehaviour:
   totalShots: 1
   delay: 1
   cooldown: 0
+  direction: {x: 0, y: 0}
+  shootTowardsPlayer: 1

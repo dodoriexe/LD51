@@ -246,10 +246,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e863f125d48940488fecc53f8c1e1dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numberOfShots: 8
-  bulletPrefab: {fileID: 8605545366739575975, guid: b6799d5517d11f24ebde5b9d4c9899e4, type: 3}
+  numberOfSpawners: 8
+  projectileSpawnerPrefab: {fileID: 8605545366739575975, guid: b6799d5517d11f24ebde5b9d4c9899e4, type: 3}
   entity: {fileID: 3798409293543959772}
   member: {fileID: 2516508692715884738}
+  movementRecoveryDelay: 2
 --- !u!114 &3798409293543959772 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4328195629450868959, guid: cf44aacca9676fe44aa9f1b4724a6d9b, type: 3}

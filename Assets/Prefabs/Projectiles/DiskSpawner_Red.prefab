@@ -134,5 +134,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 7605230734291840654, guid: 6b729e20c90e44143acf99c592b0f087, type: 3}
   totalShots: 1
-  delay: 1
+  delay: 2
   cooldown: 0

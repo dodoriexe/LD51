@@ -16,7 +16,7 @@ public class PlayerCombat : MonoBehaviour
     [SerializeField]
     float additionalDamage;
     [SerializeField]
-    float currentFireCooldown;
+    public float currentFireCooldown;
 
     // Start is called before the first frame update
     void Start()

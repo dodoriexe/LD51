@@ -67,6 +67,7 @@ public class Member : MonoBehaviour
 
     public void UnableToMove()
     {
+        acceleration = Vector3.zero;
         canMove = false;
     }
 
