@@ -80,6 +80,15 @@ public class PlayerController : Entity
         }
 
         rb.velocity = moveForce;
+
+        if(Input.GetAxisRaw("Horizontal") > 0.0f)
+        {
+            spriteRenderer.flipX = true;
+        }
+        else
+        {
+            spriteRenderer.flipX = false;
+        }
     }
 
     public new void Die()

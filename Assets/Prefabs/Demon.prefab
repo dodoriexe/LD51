@@ -204,7 +204,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3047266292448396510, guid: cf44aacca9676fe44aa9f1b4724a6d9b, type: 3}
       propertyPath: m_Name
-      value: Demon Variant
+      value: Demon
       objectReference: {fileID: 0}
     - target: {fileID: 3047266292448396511, guid: cf44aacca9676fe44aa9f1b4724a6d9b, type: 3}
       propertyPath: m_Sprite

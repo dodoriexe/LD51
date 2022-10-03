@@ -18,15 +18,22 @@ public class Member : MonoBehaviour
 
     private Vector3 wanderTarget;
 
+    private Entity entity;
+    private Vector3 originalScale;
+
     // Start is called before the first frame update
     void Start()
     {
+        originalScale = gameObject.transform.localScale;
+
         level = FindObjectOfType<Level>();
         config = GetComponent<MemberConfig>();
         player = FindObjectOfType<PlayerController>().gameObject;
 
         position = transform.position;
         velocity = new Vector3(Random.Range(-3, 3), Random.Range(-3, 3), 0);
+
+        entity = GetComponent<Entity>();
     }
 
     float RandomBinomial()
@@ -46,6 +53,15 @@ public class Member : MonoBehaviour
             position = position + velocity * Time.deltaTime;
 
             transform.position = position;
+
+            if(velocity.x > 0)
+            {
+                gameObject.transform.localScale = new Vector3(originalScale.x, originalScale.y, originalScale.z);
+            }
+            else if(velocity.x < 0)
+            {
+                gameObject.transform.localScale = new Vector3(-originalScale.x, originalScale.y, originalScale.z);
+            }
         }
     }
 
