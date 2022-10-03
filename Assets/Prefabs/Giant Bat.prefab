@@ -185,7 +185,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4328195629450868959, guid: cf44aacca9676fe44aa9f1b4724a6d9b, type: 3}
       propertyPath: knockback
-      value: 5
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 4328195629450868959, guid: cf44aacca9676fe44aa9f1b4724a6d9b, type: 3}
       propertyPath: attackSpeed
@@ -193,7 +193,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4328195629450868959, guid: cf44aacca9676fe44aa9f1b4724a6d9b, type: 3}
       propertyPath: attackDamage
-      value: 7
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 8275665509979762504, guid: cf44aacca9676fe44aa9f1b4724a6d9b, type: 3}
       propertyPath: m_Size.x

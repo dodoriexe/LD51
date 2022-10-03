@@ -127,6 +127,7 @@
     <Compile Include="Assets\Scripts\Enemies\BatShots.cs" />
     <Compile Include="Assets\Scripts\Projectile.cs" />
     <Compile Include="Assets\Scripts\Enemies\GiantBatShot.cs" />
+    <Compile Include="Assets\Scripts\AboutMusic.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

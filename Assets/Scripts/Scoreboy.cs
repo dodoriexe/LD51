@@ -16,15 +16,17 @@ public class Scoreboy : MonoBehaviour
     {
         if (SceneManager.GetActiveScene().name == "Menu") Destroy(this.gameObject);
 
-        DontDestroyOnLoad(this);
+        DontDestroyOnLoad(this.gameObject);
+
         try
         {
+            Debug.Log("Text");
             GameObject.Find("DeathText").GetComponent<GetScore>().SetText("Your body collapsed after only " + numOfPotions + " potions.");
         }
         catch (System.Exception)
         {
 
-            //throw;
+            throw;
         }
     }
 }

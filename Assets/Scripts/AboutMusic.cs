@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class MainMenuMoosic : MonoBehaviour
+public class AboutMusic : MonoBehaviour
 {
-    public static MainMenuMoosic instance;
+    public static AboutMusic instance;
 
     // Start is called before the first frame update
     void Start()
@@ -22,15 +22,9 @@ public class MainMenuMoosic : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if(SceneManager.GetActiveScene().name == "SampleScene")
-        {
-            Destroy(this.gameObject);
-        }
-
-        if (SceneManager.GetActiveScene().name == "About")
+        if (SceneManager.GetActiveScene().name == "Menu")
         {
             Destroy(this.gameObject);
         }
