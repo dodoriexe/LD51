@@ -79,19 +79,17 @@ public class PotionRoulette : MonoBehaviour
         }
         else
         {
-            if (numOfIterations % 2 == 0)
-            {
-                Level level = FindObjectOfType<Level>();
-                level.potionIterations = numOfIterations;
-                level.GenerateWave();
-
-            }
 
             foreach (var item in smallPotions)
             {
                 potionPool.Add(item);
             }
         }
+
+        Level level = FindObjectOfType<Level>();
+        level.potionIterations = numOfIterations;
+        level.GenerateWave();
+
         potionPicker.Show();
         potionSeller.Show();
 
