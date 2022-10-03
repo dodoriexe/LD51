@@ -43,7 +43,6 @@ public class PlayerCombat : MonoBehaviour
         {
             if (combatStyle == CombatStyle.MELEE)
             {
-                punchNoise.Play();
                 //TODO: Animation
 
                 Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
@@ -55,6 +54,11 @@ public class PlayerCombat : MonoBehaviour
 
                     enemyHit.TakeDamage(playerController.attackDamage + additionalDamage);
                     enemyHit.TakeKnockback(this.gameObject, playerController.knockback);
+                }
+
+                if(hitEnemies.Length > 0)
+                {
+                    punchNoise.Play();
                 }
 
             }

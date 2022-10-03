@@ -10,6 +10,8 @@ public class MainMenuMoosic : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Time.timeScale = 1f;
+
         if (instance != null && instance != this)
         {
             Destroy(this.gameObject);

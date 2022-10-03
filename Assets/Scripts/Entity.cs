@@ -19,6 +19,8 @@ public class Entity : MonoBehaviour
     public float attackDamage;
     public float knockback;
 
+    public AudioSource sauce;
+
     private float currentFireCooldown;
 
     public SpriteRenderer spriteRenderer;
@@ -64,12 +66,10 @@ public class Entity : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
+        sauce.Play();
         Debug.Log("Entity " + name + " took " + damage + " damage!");
         currentHP -= damage;
         StartFlash();
-
-
-
     }
 
     public void TakeKnockback(GameObject sender, float strength)

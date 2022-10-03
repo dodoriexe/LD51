@@ -31,6 +31,8 @@ public class Level : MonoBehaviour
         members = new List<Member>();
         //enemies = new List<Enemy>();
 
+        Time.timeScale = 1f;
+
         GenerateWave();
         avoidList.AddRange(FindObjectsOfType<Enemy>());
     }
