@@ -2579,15 +2579,15 @@ MonoBehaviour:
   numberOfMembers: 0
   spawnerEnemies:
   - prefab: {fileID: 6694895523189307042, guid: fef27fe5596428d4a93244c7cdc2b601, type: 3}
-    cost: 199
-  - prefab: {fileID: 2516508692715884765, guid: 07b877c89d6eb0842b831353f57f82c8, type: 3}
-    cost: 399
-  - prefab: {fileID: 6177082650610584291, guid: e891fa05fe15e544c849d52468c5e9d1, type: 3}
-    cost: 599
-  - prefab: {fileID: 4507880465135970971, guid: c71cd791e21ada947840aa724e6a37e7, type: 3}
-    cost: 1599
-  - prefab: {fileID: 2516508692715884765, guid: 7bbcd7c7353121f4e807c0b96f6104d0, type: 3}
     cost: 1
+  - prefab: {fileID: 2516508692715884765, guid: 07b877c89d6eb0842b831353f57f82c8, type: 3}
+    cost: 3
+  - prefab: {fileID: 6177082650610584291, guid: e891fa05fe15e544c849d52468c5e9d1, type: 3}
+    cost: 6
+  - prefab: {fileID: 4507880465135970971, guid: c71cd791e21ada947840aa724e6a37e7, type: 3}
+    cost: 15
+  - prefab: {fileID: 2516508692715884765, guid: 7bbcd7c7353121f4e807c0b96f6104d0, type: 3}
+    cost: 25
   potionIterations: 1
   waveValue: 0
   enemiesToSpawn: []
