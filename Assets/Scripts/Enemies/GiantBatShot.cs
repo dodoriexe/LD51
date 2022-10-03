@@ -8,11 +8,13 @@ public class GiantBatShot : MonoBehaviour
     GameObject projectile;
     bool onCooldown;
 
-    public int numberOfShots;
+    public int numberOfSpawners;
 
-    public Transform bulletPrefab;
+    public Transform projectileSpawnerPrefab;
     public Entity entity;
     public Member member;
+
+    public float movementRecoveryDelay;
 
     // Start is called before the first frame update
     void Start()
@@ -35,18 +37,23 @@ public class GiantBatShot : MonoBehaviour
 
     void ShootRing()
     {
-        float degree = 360f / numberOfShots;
+        float degree = 360f / numberOfSpawners;
 
         for (float i = -180f; i < 180f; i+= degree)
         {
             Quaternion rotation = Quaternion.AngleAxis(i, transform.forward);
-            //Vector2 shotPos = transform.position + rotation;
-
-            Transform bulletTransform = Instantiate(bulletPrefab, transform.position, rotation);
-
-            bulletTransform.GetComponent<Projectile>().InitializeForward(entity.attackDamage, member.config.maxVelocity, entity.knockback);
+            Transform spawnerTransform = Instantiate(projectileSpawnerPrefab, transform.position, rotation);
+            spawnerTransform.GetComponent<ProjectileSpawner>().Initialize(entity, member);
         }
+        StartCoroutine(BatShotMovementRecovery());
         StartCoroutine(BatShotCooldown());
+    }
+
+    IEnumerator BatShotMovementRecovery()
+    {
+        member.UnableToMove();
+        yield return new WaitForSeconds(movementRecoveryDelay);
+        member.AbleToMove();
     }
 
     IEnumerator BatShotCooldown()

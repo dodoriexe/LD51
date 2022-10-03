@@ -247,7 +247,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberOfShots: 8
-  bulletPrefab: {fileID: 7605230734291840654, guid: 523de63715f53fe49bb33b02a87dea75, type: 3}
+  bulletPrefab: {fileID: 8605545366739575975, guid: b6799d5517d11f24ebde5b9d4c9899e4, type: 3}
   entity: {fileID: 3798409293543959772}
   member: {fileID: 2516508692715884738}
 --- !u!114 &3798409293543959772 stripped
