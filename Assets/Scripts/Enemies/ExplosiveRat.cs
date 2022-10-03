@@ -6,10 +6,12 @@ public class ExplosiveRat : MonoBehaviour
 {
     PlayerController player;
     public LayerMask explosionLayers;
+    Entity entity;
 
     private void Start()
     {
         player = FindObjectOfType<PlayerController>();
+        Entity entity = GetComponent<Entity>();
     }
 
     private void Update()
@@ -23,7 +25,7 @@ public class ExplosiveRat : MonoBehaviour
     public void Explode()
     {
         Member member = GetComponent<Member>();
-        Entity entity = GetComponent<Entity>();
+        Entity entity = this.gameObject.GetComponent<Entity>();
 
         member.config.maxVelocity = 0;
 
@@ -41,6 +43,9 @@ public class ExplosiveRat : MonoBehaviour
             {
                 enemyHit = item.GetComponent<Entity>();
             }
+
+            if (enemyHit == entity) continue;
+            if (enemyHit == null) continue;
 
             enemyHit.TakeDamage(entity.attackDamage * 5);
             enemyHit.TakeKnockback(this.gameObject, entity.knockback * 5);

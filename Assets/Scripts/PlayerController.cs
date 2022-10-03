@@ -18,6 +18,8 @@ public class PlayerController : Entity
     public PostProcessVolume deathProcessing;
     public GameObject scoreBoyPrefab;
 
+    public AudioClip deathNoise;
+
     Animator animator;
 
     // Start is called before the first frame update
@@ -45,6 +47,7 @@ public class PlayerController : Entity
             if(deathProcessing.weight >= 0.95)
             {
                 Scoreboy scoreBoy = Instantiate(scoreBoyPrefab).GetComponent<Scoreboy>();
+                DontDestroyOnLoad(scoreBoy.gameObject);
                 scoreBoy.numOfPotions = FindObjectOfType<PotionRoulette>().numOfIterations;
                 SceneManager.LoadScene("GameOver");
             }
@@ -102,6 +105,9 @@ public class PlayerController : Entity
 
     public new void Die()
     {
+        GetComponent<AudioSource>().clip = deathNoise;
+        GetComponent<AudioSource>().Play();
+        
         deathSlowmo = true;
         spriteRenderer.color = new Color(0, 0, 0, 0);
     }

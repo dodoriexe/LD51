@@ -67,7 +67,9 @@ public class Entity : MonoBehaviour
         Debug.Log("Entity " + name + " took " + damage + " damage!");
         currentHP -= damage;
         StartFlash();
-        //TODO: Damage animation;
+
+
+
     }
 
     public void TakeKnockback(GameObject sender, float strength)

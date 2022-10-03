@@ -31,6 +31,17 @@ public class Sceneboy : MonoBehaviour
         SceneManager.LoadScene("Credits");
     }
 
+    public void ToAboutTwo()
+    {
+        Debug.Log("To About 2");
+        SceneManager.LoadScene("About 2");
+    }
+    public void ToAboutThree()
+    {
+        Debug.Log("To About 3");
+        SceneManager.LoadScene("About 3");
+    }
+
     public void ExitGame()
     {
         Application.Quit();
