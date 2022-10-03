@@ -11,10 +11,12 @@ public class Projectile : MonoBehaviour
 
     public bool justGoForwardDude;
 
+    public float lifeTime = 5.0f;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        StartCoroutine(ScheduleExpire());
     }
 
     // Update is called once per frame
@@ -34,6 +36,12 @@ public class Projectile : MonoBehaviour
             transform.position += (Vector3)directionToTravel * (moveSpeed * 2) * Time.deltaTime;
         }
         
+    }
+
+    IEnumerator ScheduleExpire()
+    {
+        yield return new WaitForSeconds(lifeTime);
+        Destroy(this.gameObject);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

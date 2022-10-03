@@ -234,9 +234,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37ddb76cf28721a41926ff735c356ee4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 7605230734291840654, guid: ceea926af95571d41a3ae644d1d17b0b, type: 3}
+  projectileSpawnerPrefab: {fileID: 8605545366739575975, guid: 9dfadfd10d4eaea41bbae6e662e0e14f, type: 3}
   entity: {fileID: 3798409293543959772}
   member: {fileID: 2516508692715884738}
+  movementRecoveryDelay: 0.75
 --- !u!114 &3798409293543959772 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4328195629450868959, guid: cf44aacca9676fe44aa9f1b4724a6d9b, type: 3}

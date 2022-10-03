@@ -6,12 +6,13 @@ public class BatShots : MonoBehaviour
 {
 
     GameObject player;
-    GameObject projectile;
     bool onCooldown;
 
-    public Transform bulletPrefab;
+    public Transform projectileSpawnerPrefab;
     public Entity entity;
     public Member member;
+
+    public float movementRecoveryDelay;
 
     // Start is called before the first frame update
     void Start()
@@ -34,12 +35,17 @@ public class BatShots : MonoBehaviour
 
     void ShootAtPlayer()
     {
-
-        Transform bulletTransform = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
-
-        Vector2 shootDirection = (player.transform.position - transform.position).normalized;
-        bulletTransform.GetComponent<Projectile>().Initialize(shootDirection, entity.attackDamage, member.config.maxVelocity, entity.knockback);
+        Transform spawnerTransform = Instantiate(projectileSpawnerPrefab, transform.position, Quaternion.identity);
+        spawnerTransform.GetComponent<ProjectileSpawner>().Initialize(entity, member);
+        StartCoroutine(BatShotMovementRecovery());
         StartCoroutine(BatShotCooldown());
+    }
+
+    IEnumerator BatShotMovementRecovery()
+    {
+        member.UnableToMove();
+        yield return new WaitForSeconds(movementRecoveryDelay);
+        member.AbleToMove();
     }
 
     IEnumerator BatShotCooldown()
@@ -47,5 +53,6 @@ public class BatShots : MonoBehaviour
         onCooldown = true;
         yield return new WaitForSeconds(entity.attackSpeed);
         onCooldown = false;
+        member.AbleToMove();
     }
 }
