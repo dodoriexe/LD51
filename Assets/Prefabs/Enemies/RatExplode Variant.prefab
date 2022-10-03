@@ -117,3 +117,4 @@ MonoBehaviour:
   explosionLayers:
     serializedVersion: 2
     m_Bits: 72
+  explosionParticles: {fileID: 6784873533780859793, guid: 4ffc6a6362fb4f5448d81b2e770ead7c, type: 3}
