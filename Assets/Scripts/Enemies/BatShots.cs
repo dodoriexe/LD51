@@ -53,6 +53,5 @@ public class BatShots : MonoBehaviour
         onCooldown = true;
         yield return new WaitForSeconds(entity.attackSpeed);
         onCooldown = false;
-        member.AbleToMove();
     }
 }

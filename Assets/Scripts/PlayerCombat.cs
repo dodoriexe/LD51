@@ -9,6 +9,8 @@ public class PlayerCombat : MonoBehaviour
     public Transform attackPoint;
     public LayerMask enemyLayers;
 
+    public AudioSource punchNoise;
+
     CombatStyle combatStyle;
 
     [SerializeField]
@@ -41,6 +43,7 @@ public class PlayerCombat : MonoBehaviour
         {
             if (combatStyle == CombatStyle.MELEE)
             {
+                punchNoise.Play();
                 //TODO: Animation
 
                 Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
