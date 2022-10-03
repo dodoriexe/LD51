@@ -117,6 +117,7 @@
     <Compile Include="Assets\Scripts\Potion\SmallLifeReg.cs" />
     <Compile Include="Assets\LeanTween\Examples\Archived\TestingRigidbodyCS.cs" />
     <Compile Include="Assets\LeanTween\Examples\Scripts\Following.cs" />
+    <Compile Include="Assets\SPEEN.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
