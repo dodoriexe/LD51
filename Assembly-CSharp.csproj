@@ -120,7 +120,6 @@
     <Compile Include="Assets\SPEEN.cs" />
     <Compile Include="Assets\Scripts\Enemies\DemonStab.cs" />
     <Compile Include="Assets\Scripts\Enemies\GiantBatShot.cs" />
-<<<<<<< HEAD
     <Compile Include="Assets\Scripts\Projectile.cs" />
     <Compile Include="Assets\Scripts\Scoreboy.cs" />
     <Compile Include="Assets\Scripts\Enemies\BatShots.cs" />
@@ -130,9 +129,8 @@
     <Compile Include="Assets\MainMenuMoosic.cs" />
     <Compile Include="Assets\Scripts\SpinInPlace.cs" />
     <Compile Include="Assets\Scripts\ProjectileSpawner.cs" />
-=======
     <Compile Include="Assets\Scripts\AboutMusic.cs" />
->>>>>>> db8e085f286e73e687f436cc4b55d21d8dfa6b9f
+    <Compile Include="Assets\Scripts\RemoveAfterDelay.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

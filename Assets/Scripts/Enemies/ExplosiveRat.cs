@@ -8,6 +8,8 @@ public class ExplosiveRat : MonoBehaviour
     public LayerMask explosionLayers;
     Entity entity;
 
+    public GameObject explosionParticles;
+
     private void Start()
     {
         player = FindObjectOfType<PlayerController>();
@@ -51,9 +53,7 @@ public class ExplosiveRat : MonoBehaviour
             enemyHit.TakeKnockback(this.gameObject, entity.knockback * 5);
         }
 
-        //TODO: Explosion
-
+        Instantiate(explosionParticles, transform.position, Quaternion.identity);
         entity.Die();
-
     }
 }
