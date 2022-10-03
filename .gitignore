@@ -2,6 +2,9 @@ Library/
 Temp/
 Logs/
 build/
+UserSettings/
+.vs
+.github
 .plastic
 Assembly-CSharp-Editor.csproj
 Assembly-CSharp.csproj
