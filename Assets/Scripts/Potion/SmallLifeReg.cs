@@ -7,6 +7,6 @@ public class SmallLifeReg : Potion
     public override void Drink()
     {
         base.Drink();
-        level.player.healthPerSecond += 2f;
+        level.player.healthPerSecond += .2f;
     }
 }

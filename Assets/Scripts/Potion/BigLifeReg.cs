@@ -7,6 +7,6 @@ public class BigLifeReg : Potion
     public override void Drink()
     {
         base.Drink();
-        level.player.healthPerSecond += 20f;
+        level.player.healthPerSecond += 2f;
     }
 }
