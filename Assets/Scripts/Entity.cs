@@ -8,6 +8,7 @@ public class Entity : MonoBehaviour
     public KnockbackFeedback knockbackFeedback;
     public Material flashMaterial;
     public Material originalMaterial;
+    public Color originalColor;
     public float maxHP;
     public float currentHP;
     public float healthPerSecond; // aka. Life Regeneration
@@ -36,6 +37,7 @@ public class Entity : MonoBehaviour
 
         spriteRenderer = GetComponent<SpriteRenderer>();
         originalMaterial = spriteRenderer.material;
+        originalColor = spriteRenderer.color;
     }
 
     // Update is called once per frame
@@ -84,7 +86,7 @@ public class Entity : MonoBehaviour
     public void StopFlash()
     {
         spriteRenderer.material = originalMaterial;
-        spriteRenderer.color = Color.white;
+        spriteRenderer.color = originalColor;
     }
 
     private void OnCollisionStay2D(Collision2D collision)

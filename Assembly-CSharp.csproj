@@ -121,6 +121,12 @@
     <Compile Include="Assets\MainMenuMoosic.cs" />
     <Compile Include="Assets\Sceneboy.cs" />
     <Compile Include="Assets\TwitterOpener.cs" />
+    <Compile Include="Assets\Scripts\Scoreboy.cs" />
+    <Compile Include="Assets\GetScore.cs" />
+    <Compile Include="Assets\Scripts\Enemies\DemonStab.cs" />
+    <Compile Include="Assets\Scripts\Enemies\BatShots.cs" />
+    <Compile Include="Assets\Scripts\Projectile.cs" />
+    <Compile Include="Assets\Scripts\Enemies\GiantBatShot.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

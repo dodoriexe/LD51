@@ -31,7 +31,16 @@ public class ExplosiveRat : MonoBehaviour
 
         foreach (var item in hitEnemies)
         {
-            Entity enemyHit = item.GetComponent<Entity>();
+            Entity enemyHit;
+
+            if(item.GetComponent<PlayerController>())
+            {
+                enemyHit = item.GetComponent<PlayerController>();
+            }
+            else
+            {
+                enemyHit = item.GetComponent<Entity>();
+            }
 
             enemyHit.TakeDamage(entity.attackDamage * 5);
             enemyHit.TakeKnockback(this.gameObject, entity.knockback * 5);

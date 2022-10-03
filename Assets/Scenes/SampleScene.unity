@@ -424,7 +424,7 @@ GameObject:
   - component: {fileID: 510381937}
   m_Layer: 0
   m_Name: WALL (2)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -890,6 +890,7 @@ Transform:
   m_Children:
   - {fileID: 2109043795}
   - {fileID: 1293033452}
+  - {fileID: 799223167}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -908,6 +909,7 @@ MonoBehaviour:
   knockbackFeedback: {fileID: 0}
   flashMaterial: {fileID: 2100000, guid: 9bea4fa00bd6c164bb9cac3eb390faa6, type: 2}
   originalMaterial: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  originalColor: {r: 1, g: 1, b: 1, a: 1}
   maxHP: 100
   currentHP: 76
   healthPerSecond: 1
@@ -923,6 +925,7 @@ MonoBehaviour:
   combat: {fileID: 742917503}
   deathSlowmo: 0
   deathProcessing: {fileID: 519420034}
+  scoreBoyPrefab: {fileID: 9010928216253724018, guid: 8c77fd4d21d898342b0a87d594ed88a1, type: 3}
 --- !u!50 &742917501
 Rigidbody2D:
   serializedVersion: 4
@@ -1228,6 +1231,64 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!1 &799223166
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 799223167}
+  - component: {fileID: 799223168}
+  m_Layer: 3
+  m_Name: GameObject
+  m_TagString: PlayerSide
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &799223167
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 799223166}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 742917499}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &799223168
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 799223166}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3, y: 1}
+  m_EdgeRadius: 0
 --- !u!1 &814907165
 GameObject:
   m_ObjectHideFlags: 0
@@ -1679,7 +1740,7 @@ GameObject:
   - component: {fileID: 1123998801}
   m_Layer: 0
   m_Name: WALL
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2144,7 +2205,7 @@ GameObject:
   - component: {fileID: 1408206199}
   m_Layer: 0
   m_Name: WALL (1)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2432,7 +2493,7 @@ GameObject:
   - component: {fileID: 1632883040}
   m_Layer: 0
   m_Name: WALL (3)
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2514,16 +2575,19 @@ MonoBehaviour:
   - {fileID: 6694895523189307068, guid: fef27fe5596428d4a93244c7cdc2b601, type: 3}
   - {fileID: 6177082650610584317, guid: e891fa05fe15e544c849d52468c5e9d1, type: 3}
   - {fileID: 4507880465135970949, guid: c71cd791e21ada947840aa724e6a37e7, type: 3}
+  - {fileID: 2516508692715884739, guid: 7bbcd7c7353121f4e807c0b96f6104d0, type: 3}
   numberOfMembers: 0
   spawnerEnemies:
   - prefab: {fileID: 6694895523189307042, guid: fef27fe5596428d4a93244c7cdc2b601, type: 3}
-    cost: 1
+    cost: 199
   - prefab: {fileID: 2516508692715884765, guid: 07b877c89d6eb0842b831353f57f82c8, type: 3}
-    cost: 3
+    cost: 399
   - prefab: {fileID: 6177082650610584291, guid: e891fa05fe15e544c849d52468c5e9d1, type: 3}
-    cost: 5
+    cost: 599
   - prefab: {fileID: 4507880465135970971, guid: c71cd791e21ada947840aa724e6a37e7, type: 3}
-    cost: 15
+    cost: 1599
+  - prefab: {fileID: 2516508692715884765, guid: 7bbcd7c7353121f4e807c0b96f6104d0, type: 3}
+    cost: 1
   potionIterations: 1
   waveValue: 0
   enemiesToSpawn: []

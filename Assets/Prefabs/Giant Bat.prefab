@@ -91,9 +91,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -7602943107819416264, guid: cf44aacca9676fe44aa9f1b4724a6d9b, type: 3}
+      propertyPath: maxVelocity
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3047266292448396480, guid: cf44aacca9676fe44aa9f1b4724a6d9b, type: 3}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3047266292448396480, guid: cf44aacca9676fe44aa9f1b4724a6d9b, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3047266292448396480, guid: cf44aacca9676fe44aa9f1b4724a6d9b, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3047266292448396480, guid: cf44aacca9676fe44aa9f1b4724a6d9b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -137,11 +149,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3047266292448396481, guid: cf44aacca9676fe44aa9f1b4724a6d9b, type: 3}
       propertyPath: enemyType
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3047266292448396510, guid: cf44aacca9676fe44aa9f1b4724a6d9b, type: 3}
       propertyPath: m_Name
-      value: Bat
+      value: Giant Bat
       objectReference: {fileID: 0}
     - target: {fileID: 3047266292448396510, guid: cf44aacca9676fe44aa9f1b4724a6d9b, type: 3}
       propertyPath: m_Layer
@@ -153,15 +165,15 @@ PrefabInstance:
       objectReference: {fileID: -903994242, guid: 630b260157c8959408ee3e688bacca1a, type: 3}
     - target: {fileID: 3047266292448396511, guid: cf44aacca9676fe44aa9f1b4724a6d9b, type: 3}
       propertyPath: m_Color.b
-      value: 1
+      value: 0.4184534
       objectReference: {fileID: 0}
     - target: {fileID: 3047266292448396511, guid: cf44aacca9676fe44aa9f1b4724a6d9b, type: 3}
       propertyPath: m_Color.g
-      value: 1
+      value: 0.09531862
       objectReference: {fileID: 0}
     - target: {fileID: 3047266292448396511, guid: cf44aacca9676fe44aa9f1b4724a6d9b, type: 3}
       propertyPath: m_Color.r
-      value: 1
+      value: 0.9622642
       objectReference: {fileID: 0}
     - target: {fileID: 4328195629450868959, guid: cf44aacca9676fe44aa9f1b4724a6d9b, type: 3}
       propertyPath: maxHP
@@ -177,11 +189,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4328195629450868959, guid: cf44aacca9676fe44aa9f1b4724a6d9b, type: 3}
       propertyPath: attackSpeed
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4328195629450868959, guid: cf44aacca9676fe44aa9f1b4724a6d9b, type: 3}
       propertyPath: attackDamage
-      value: 5
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 8275665509979762504, guid: cf44aacca9676fe44aa9f1b4724a6d9b, type: 3}
       propertyPath: m_Size.x
@@ -222,7 +234,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3047266292448396510, guid: cf44aacca9676fe44aa9f1b4724a6d9b, type: 3}
   m_PrefabInstance: {fileID: 623326193905292291}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &7335977119659039536
+--- !u!114 &-5178786345473678125
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -231,10 +243,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 2516508692715884765}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 37ddb76cf28721a41926ff735c356ee4, type: 3}
+  m_Script: {fileID: 11500000, guid: 2e863f125d48940488fecc53f8c1e1dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 7605230734291840654, guid: ceea926af95571d41a3ae644d1d17b0b, type: 3}
+  numberOfShots: 8
+  bulletPrefab: {fileID: 7605230734291840654, guid: 523de63715f53fe49bb33b02a87dea75, type: 3}
   entity: {fileID: 3798409293543959772}
   member: {fileID: 2516508692715884738}
 --- !u!114 &3798409293543959772 stripped

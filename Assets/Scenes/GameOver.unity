@@ -134,8 +134,9 @@ GameObject:
   - component: {fileID: 478741392}
   - component: {fileID: 478741394}
   - component: {fileID: 478741393}
+  - component: {fileID: 478741395}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: DeathText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -258,6 +259,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 478741391}
   m_CullTransparentMesh: 1
+--- !u!114 &478741395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 478741391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 485ea52a0f6b35e42ba96424a7501610, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thatText: {fileID: 478741393}
 --- !u!1 &1310831826
 GameObject:
   m_ObjectHideFlags: 0
@@ -786,6 +800,7 @@ GameObject:
   - component: {fileID: 1808787447}
   - component: {fileID: 1808787446}
   - component: {fileID: 1808787448}
+  - component: {fileID: 1808787449}
   m_Layer: 0
   m_Name: death
   m_TagString: Untagged
@@ -873,6 +888,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speenSpeed: -5
+--- !u!114 &1808787449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1808787445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 923e0541c8bb9fc4793b9a6b4839d89c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1976790924
 GameObject:
   m_ObjectHideFlags: 0
@@ -956,7 +983,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1976790927}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1808787449}
+        m_TargetAssemblyTypeName: Sceneboy, Assembly-CSharp
+        m_MethodName: ToMainMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1976790927
 MonoBehaviour:
   m_ObjectHideFlags: 0

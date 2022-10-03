@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.PostProcessing;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : Entity
 {
@@ -15,6 +16,7 @@ public class PlayerController : Entity
 
     public bool deathSlowmo;
     public PostProcessVolume deathProcessing;
+    public GameObject scoreBoyPrefab;
 
     Animator animator;
 
@@ -39,6 +41,13 @@ public class PlayerController : Entity
             Time.timeScale = Mathf.Lerp(Time.timeScale, .25f, 0.005f);
             deathProcessing.weight = Mathf.Lerp(deathProcessing.weight, 1, 0.005f);
             spriteRenderer.color = new Color(1, 0, 0, Mathf.Lerp(spriteRenderer.color.a, 0, 0.005f));
+
+            if(deathProcessing.weight >= 0.95)
+            {
+                Scoreboy scoreBoy = Instantiate(scoreBoyPrefab).GetComponent<Scoreboy>();
+                scoreBoy.numOfPotions = FindObjectOfType<PotionRoulette>().numOfIterations;
+                SceneManager.LoadScene("GameOver");
+            }
 
             return;
         }
@@ -96,4 +105,5 @@ public class PlayerController : Entity
         deathSlowmo = true;
         spriteRenderer.color = new Color(0, 0, 0, 0);
     }
+
 }

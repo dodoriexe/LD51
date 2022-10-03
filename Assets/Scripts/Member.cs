@@ -225,5 +225,6 @@ public enum EnemyType
     BAT,
     RAT,
     EXPLOSIVERAT,
-    DEMON
+    DEMON,
+    GIANTBAT
 }
