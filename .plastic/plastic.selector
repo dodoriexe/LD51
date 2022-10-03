@@ -1,4 +1,0 @@
-repository "Every 10 Seconds@dodori@cloud"
-  path "/"
-    br "/main"
-    co "/main"
