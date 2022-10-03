@@ -1,0 +1,126 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &4903090557549550883
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3438811726138350157, guid: e07b6a22343dd0d45bac11a1e8d49eef, type: 3}
+      propertyPath: m_Name
+      value: SmallHealthUpPotion Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 3438811726138350158, guid: e07b6a22343dd0d45bac11a1e8d49eef, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3438811726138350158, guid: e07b6a22343dd0d45bac11a1e8d49eef, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3438811726138350158, guid: e07b6a22343dd0d45bac11a1e8d49eef, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3438811726138350158, guid: e07b6a22343dd0d45bac11a1e8d49eef, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3438811726138350158, guid: e07b6a22343dd0d45bac11a1e8d49eef, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3438811726138350158, guid: e07b6a22343dd0d45bac11a1e8d49eef, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3438811726138350158, guid: e07b6a22343dd0d45bac11a1e8d49eef, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3438811726138350158, guid: e07b6a22343dd0d45bac11a1e8d49eef, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3438811726138350158, guid: e07b6a22343dd0d45bac11a1e8d49eef, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3438811726138350158, guid: e07b6a22343dd0d45bac11a1e8d49eef, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3438811726138350158, guid: e07b6a22343dd0d45bac11a1e8d49eef, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3438811726138350158, guid: e07b6a22343dd0d45bac11a1e8d49eef, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3438811726138350158, guid: e07b6a22343dd0d45bac11a1e8d49eef, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3438811726138350158, guid: e07b6a22343dd0d45bac11a1e8d49eef, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3438811726138350158, guid: e07b6a22343dd0d45bac11a1e8d49eef, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3438811726138350158, guid: e07b6a22343dd0d45bac11a1e8d49eef, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3438811726138350158, guid: e07b6a22343dd0d45bac11a1e8d49eef, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3438811726138350158, guid: e07b6a22343dd0d45bac11a1e8d49eef, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3438811726138350158, guid: e07b6a22343dd0d45bac11a1e8d49eef, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3438811726138350158, guid: e07b6a22343dd0d45bac11a1e8d49eef, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3438811726138350158, guid: e07b6a22343dd0d45bac11a1e8d49eef, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 7140073077254571158, guid: e07b6a22343dd0d45bac11a1e8d49eef, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: e07b6a22343dd0d45bac11a1e8d49eef, type: 3}
+--- !u!1 &7760366168253957998 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3438811726138350157, guid: e07b6a22343dd0d45bac11a1e8d49eef, type: 3}
+  m_PrefabInstance: {fileID: 4903090557549550883}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &603125603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7760366168253957998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b195e4cabad0344c87b8081cc953164, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level: {fileID: 0}
+  potionName: Potion of Health Care
+  potionDescription: 'Slightly raises your max health!
+
+    <color=green> +2 Max
+    Health!'
+  liquidColor: {r: 1, g: 0.4198113, b: 0.4198113, a: 1}
+  potionType: 0
+  rectTransform: {fileID: 0}

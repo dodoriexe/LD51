@@ -1,0 +1,136 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &7150239797923919341
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 669486299853107420, guid: 722f08a28576f0d45ae762ce2465e11b, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 669486299853107420, guid: 722f08a28576f0d45ae762ce2465e11b, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 669486299853107420, guid: 722f08a28576f0d45ae762ce2465e11b, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 669486299853107420, guid: 722f08a28576f0d45ae762ce2465e11b, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 669486299853107420, guid: 722f08a28576f0d45ae762ce2465e11b, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 669486299853107420, guid: 722f08a28576f0d45ae762ce2465e11b, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 669486299853107420, guid: 722f08a28576f0d45ae762ce2465e11b, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 669486299853107420, guid: 722f08a28576f0d45ae762ce2465e11b, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 669486299853107420, guid: 722f08a28576f0d45ae762ce2465e11b, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 669486299853107420, guid: 722f08a28576f0d45ae762ce2465e11b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 669486299853107420, guid: 722f08a28576f0d45ae762ce2465e11b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 669486299853107420, guid: 722f08a28576f0d45ae762ce2465e11b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 669486299853107420, guid: 722f08a28576f0d45ae762ce2465e11b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 669486299853107420, guid: 722f08a28576f0d45ae762ce2465e11b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 669486299853107420, guid: 722f08a28576f0d45ae762ce2465e11b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 669486299853107420, guid: 722f08a28576f0d45ae762ce2465e11b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 669486299853107420, guid: 722f08a28576f0d45ae762ce2465e11b, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 669486299853107420, guid: 722f08a28576f0d45ae762ce2465e11b, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 669486299853107420, guid: 722f08a28576f0d45ae762ce2465e11b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 669486299853107420, guid: 722f08a28576f0d45ae762ce2465e11b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 669486299853107420, guid: 722f08a28576f0d45ae762ce2465e11b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 669486299853107421, guid: 722f08a28576f0d45ae762ce2465e11b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -458140058, guid: 8d2f2d9cfdac23048a06632bdade70b8, type: 3}
+    - target: {fileID: 669486299853107423, guid: 722f08a28576f0d45ae762ce2465e11b, type: 3}
+      propertyPath: m_Name
+      value: BigKnockback Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 4750682481465608483, guid: 722f08a28576f0d45ae762ce2465e11b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 625067470, guid: 8d2f2d9cfdac23048a06632bdade70b8, type: 3}
+    m_RemovedComponents:
+    - {fileID: 1945524457, guid: 722f08a28576f0d45ae762ce2465e11b, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 722f08a28576f0d45ae762ce2465e11b, type: 3}
+--- !u!1 &7669840208415786290 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 669486299853107423, guid: 722f08a28576f0d45ae762ce2465e11b, type: 3}
+  m_PrefabInstance: {fileID: 7150239797923919341}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &856477020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7669840208415786290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 158b3c563511b204fa788056909986d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level: {fileID: 0}
+  potionName: Potion of Loneliness
+  potionDescription: 'Massively increases your knockback!
+
+    <color=green> +35
+    Knockback on hit!'
+  liquidColor: {r: 0.1497201, g: 0.11801351, b: 0.49056602, a: 1}
+  potionType: 1
+  stored: 0
+  canvasGroup: {fileID: 0}
+  rectTransform: {fileID: 0}

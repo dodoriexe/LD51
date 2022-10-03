@@ -1,0 +1,136 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &4485107462385269911
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4038189921733242778, guid: d0da82cec86785d459ad4e88926fa2c0, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 625067470, guid: 8d2f2d9cfdac23048a06632bdade70b8, type: 3}
+    - target: {fileID: 8119188460770236004, guid: d0da82cec86785d459ad4e88926fa2c0, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -458140058, guid: 8d2f2d9cfdac23048a06632bdade70b8, type: 3}
+    - target: {fileID: 8119188460770236005, guid: d0da82cec86785d459ad4e88926fa2c0, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8119188460770236005, guid: d0da82cec86785d459ad4e88926fa2c0, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8119188460770236005, guid: d0da82cec86785d459ad4e88926fa2c0, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8119188460770236005, guid: d0da82cec86785d459ad4e88926fa2c0, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8119188460770236005, guid: d0da82cec86785d459ad4e88926fa2c0, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8119188460770236005, guid: d0da82cec86785d459ad4e88926fa2c0, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8119188460770236005, guid: d0da82cec86785d459ad4e88926fa2c0, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8119188460770236005, guid: d0da82cec86785d459ad4e88926fa2c0, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 8119188460770236005, guid: d0da82cec86785d459ad4e88926fa2c0, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 8119188460770236005, guid: d0da82cec86785d459ad4e88926fa2c0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8119188460770236005, guid: d0da82cec86785d459ad4e88926fa2c0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8119188460770236005, guid: d0da82cec86785d459ad4e88926fa2c0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8119188460770236005, guid: d0da82cec86785d459ad4e88926fa2c0, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8119188460770236005, guid: d0da82cec86785d459ad4e88926fa2c0, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8119188460770236005, guid: d0da82cec86785d459ad4e88926fa2c0, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8119188460770236005, guid: d0da82cec86785d459ad4e88926fa2c0, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8119188460770236005, guid: d0da82cec86785d459ad4e88926fa2c0, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8119188460770236005, guid: d0da82cec86785d459ad4e88926fa2c0, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8119188460770236005, guid: d0da82cec86785d459ad4e88926fa2c0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8119188460770236005, guid: d0da82cec86785d459ad4e88926fa2c0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8119188460770236005, guid: d0da82cec86785d459ad4e88926fa2c0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8119188460770236006, guid: d0da82cec86785d459ad4e88926fa2c0, type: 3}
+      propertyPath: m_Name
+      value: BigLifeReg Variant
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 866590903, guid: d0da82cec86785d459ad4e88926fa2c0, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: d0da82cec86785d459ad4e88926fa2c0, type: 3}
+--- !u!1 &5661987466077563633 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8119188460770236006, guid: d0da82cec86785d459ad4e88926fa2c0, type: 3}
+  m_PrefabInstance: {fileID: 4485107462385269911}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &51753508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5661987466077563633}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9117c1d07cb53f047b5b664f8cf5caae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level: {fileID: 0}
+  potionName: Potion of Blood Clots
+  potionDescription: 'Massively Increases your Health Regeneration.
+
+    <color=green>+20
+    Health Per Second.'
+  liquidColor: {r: 0.5849056, g: 0.32280168, b: 0.32280168, a: 1}
+  potionType: 1
+  stored: 0
+  canvasGroup: {fileID: 0}
+  rectTransform: {fileID: 0}
