@@ -2,5 +2,6 @@ Library/
 Temp/
 Logs/
 build/
+.plastic
 Assembly-CSharp-Editor.csproj
 Assembly-CSharp.csproj
