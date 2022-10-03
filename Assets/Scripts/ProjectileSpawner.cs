@@ -9,7 +9,7 @@ public class ProjectileSpawner : MonoBehaviour
     Member member;
     int numShots;
     bool canShoot = false;
-    bool forward = false;
+    bool directional = false;
 
     public Transform bulletPrefab;
     public int totalShots;
@@ -22,14 +22,15 @@ public class ProjectileSpawner : MonoBehaviour
     {
         this.entity = entity;
         this.member = member;
-        forward = false;
+        directional = false;
     }
 
-    public void InitializeForward(Entity entity, Member member)
+    public void InitializeDirection(Vector2 direction, Entity entity, Member member)
     {
         this.entity = entity;
         this.member = member;
-        forward = true;
+        this.direction = direction;
+        directional = true;
     }
 
     // Start is called before the first frame update
@@ -65,10 +66,7 @@ public class ProjectileSpawner : MonoBehaviour
         if(shootTowardsPlayer)
             direction = (player.transform.position - transform.position).normalized;
 
-        if(forward)
-            bulletTransform.GetComponent<Projectile>().InitializeForward(entity.attackDamage, member.config.maxVelocity, entity.knockback);
-        else
-            bulletTransform.GetComponent<Projectile>().Initialize(direction, entity.attackDamage, member.config.maxVelocity, entity.knockback);
+        bulletTransform.GetComponent<Projectile>().Initialize(direction, entity.attackDamage, member.config.maxVelocity, entity.knockback);
 
         numShots++;
     }
